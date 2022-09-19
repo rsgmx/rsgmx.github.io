@@ -1,4 +1,4 @@
-var info = '';
+var info = 'init';
 function geosuccess(position) {
   const lat = position.coords.latitude;
   const lng = position.coords.longitude;  
