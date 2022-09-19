@@ -4,11 +4,12 @@
   <title>Worker example: One-core computation</title>
  </head>
  <body>
-  <p>The highest prime number discovered so far is: <output id="result"></output></p>
+  <p><output id="result"></output></p>
+  <p>Nextone<output id="position"></output></output></p>
   <script src='main.js'></script>
-  <script>
-   
-   doGeo();
+  <script>   
+   //doGeo();
+   startGeo();
    var worker = new Worker('worker.js');
    worker.onmessage = function (event) {    
      // document.getElementById('result').textContent = event.data;
