@@ -5,6 +5,7 @@
  </head>
  <body>
   <p>The highest prime number discovered so far is: <output id="result"></output></p>
+  <script src='main.js'></script>
   <script>
    var worker = new Worker('worker.js');
    worker.onmessage = function (event) {
